@@ -1,0 +1,80 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap');
+
+@theme {
+    --font-sans: 'JetBrains Mono', monospace;
+}
+
+/* Dark wallboard theme with orange monospaced capitals */
+body {
+    background: #000000 !important;
+    color: #ff6600 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-weight: 800 !important;
+    font-size: 28px !important;
+    line-height: 1.4 !important;
+    padding: 40px !important;
+    margin: 0 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+}
+
+* {
+    color: #ff6600 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+}
+
+/* Override any light theme styles */
+div, p, span, h1, h2, h3, h4, h5, h6, a, table, td, th {
+    background: transparent !important;
+    color: #ff6600 !important;
+    border-color: #ff6600 !important;
+}
+
+/* Links and interactive elements */
+a {
+    color: #ff8800 !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #ffaa00 !important;
+}
+
+/* Tables and structured data */
+table {
+    border: 2px solid #ff6600 !important;
+    background: transparent !important;
+}
+
+td, th {
+    border: 1px solid #ff6600 !important;
+    padding: 16px !important;
+}
+
+/* Remove shadows and rounded corners for wallboard look */
+.container, div {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+
+/* Error and loading states */
+.error {
+    background: #330000 !important;
+    border: 2px solid #ff0000 !important;
+    color: #ff0000 !important;
+}
+
+.loading {
+    color: #ff6600 !important;
+    font-size: 32px !important;
+}
