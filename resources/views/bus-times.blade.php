@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus Times - Stop 0190NSC30636</title>
+    <title>Transport</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         /* Additional wallboard-specific overrides */
@@ -19,11 +19,11 @@
             letter-spacing: 2px !important;
             overflow-x: auto !important;
         }
-        
+
         #app {
             background: transparent !important;
         }
-        
+
         /* Ensure all scraped content follows wallboard theme */
         * {
             color: #ff6600 !important;
@@ -34,6 +34,6 @@
 <body>
     <div id="app">
     </div>
-    
+
 </body>
 </html>
