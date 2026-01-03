@@ -93,8 +93,6 @@ export default {
 h1 {
   color: #ff6600 !important;
   border-bottom: 4px solid #ff6600 !important;
-  padding-bottom: 20px !important;
-  margin-bottom: 40px !important;
   font-size: 48px !important;
   text-align: center !important;
   font-family: 'JetBrains Mono', monospace !important;
@@ -104,12 +102,12 @@ h1 {
 }
 
 .departures {
-  margin-top: 40px !important;
+  margin-top: 15px !important;
 }
 
 .loading {
   text-align: center !important;
-  padding: 40px !important;
+  padding: 20px !important;
   color: #ff6600 !important;
   font-size: 36px !important;
   font-family: 'JetBrains Mono', monospace !important;
@@ -119,7 +117,7 @@ h1 {
 
 .error {
   color: #ff0000 !important;
-  padding: 20px !important;
+  padding: 10px !important;
   background-color: #330000 !important;
   border: 3px solid #ff0000 !important;
   border-radius: 0 !important;
@@ -138,7 +136,7 @@ h1 {
 }
 
 :deep(th), :deep(td) {
-  padding: 20px !important;
+  padding: 10px !important;
   text-align: left !important;
   border: 2px solid #ff6600 !important;
   color: #ff6600 !important;
@@ -176,7 +174,7 @@ h1 {
   font-weight: 800 !important;
   text-transform: uppercase !important;
   text-align: center !important;
-  margin-top: 40px !important;
+  margin-top: 15px !important;
   font-size: 18px !important;
 }
 
@@ -184,14 +182,14 @@ h1 {
   font-size: 32px !important;
   font-weight: 800 !important;
   display: block !important;
-  margin: 20px 0 !important;
-  padding: 20px !important;
+  margin: 10px 0 !important;
+  padding: 10px !important;
   border: 2px solid #ff6600 !important;
 }
 
 :deep(hr) {
   border: 2px solid #ff6600 !important;
-  margin: 30px 0 !important;
+  margin: 15px 0 !important;
 }
 
 </style>

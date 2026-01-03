@@ -10,7 +10,7 @@
         body {
             font-family: 'JetBrains Mono', monospace !important;
             margin: 0 !important;
-            padding: 40px !important;
+            padding: 20px !important;
             background-color: #000000 !important;
             color: #ff6600 !important;
             font-weight: 800 !important;
@@ -32,7 +32,6 @@
     </style>
 </head>
 <body>
-    <code>Top</code>
     <div id="app">
     </div>
 

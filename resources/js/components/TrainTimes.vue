@@ -76,7 +76,7 @@ export default {
 <style scoped>
 .container {
   max-width: none !important;
-  margin: 40px 0 0 0 !important;
+  margin: 20px 0 0 0 !important;
   background: transparent !important;
   padding: 0 !important;
   border-radius: 0 !important;
@@ -90,8 +90,6 @@ export default {
 h1 {
   color: #ff6600 !important;
   border-bottom: 4px solid #ff6600 !important;
-  padding-bottom: 10px !important;
-  margin-bottom: 40px !important;
   font-size: 48px !important;
   text-align: center !important;
   font-family: 'JetBrains Mono', monospace !important;
@@ -101,12 +99,12 @@ h1 {
 }
 
 .departures {
-  margin-top: 40px !important;
+  margin-top: 15px !important;
 }
 
 .loading {
   text-align: center !important;
-  padding: 40px !important;
+  padding: 20px !important;
   color: #ff6600 !important;
   font-size: 36px !important;
   font-family: 'JetBrains Mono', monospace !important;
@@ -191,7 +189,7 @@ h1 {
   font-weight: 800 !important;
   text-transform: uppercase !important;
   text-align: center !important;
-  margin-top: 40px !important;
+  margin-top: 15px !important;
   font-size: 18px !important;
 }
 
@@ -206,6 +204,6 @@ h1 {
 
 :deep(hr) {
   border: 2px solid #ff6600 !important;
-  margin: 30px 0 !important;
+  margin: 15px 0 !important;
 }
 </style>
