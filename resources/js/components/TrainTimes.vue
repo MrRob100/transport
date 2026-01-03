@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Train Times - Nailsea to Bristol</h1>
+    <h1>Train</h1>
     <div class="departures">
       <div v-if="loading" class="loading">
         Loading train times...
@@ -76,7 +76,7 @@ export default {
 <style scoped>
 .container {
   max-width: none !important;
-  margin: 20px 0 0 0 !important;
+  margin: 10px 0 0 0 !important;
   background: transparent !important;
   padding: 0 !important;
   border-radius: 0 !important;
@@ -89,17 +89,12 @@ export default {
 
 h1 {
   color: #ff6600 !important;
-  border-bottom: 4px solid #ff6600 !important;
   font-size: 48px !important;
   text-align: center !important;
   font-family: 'JetBrains Mono', monospace !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
   letter-spacing: 3px !important;
-}
-
-.departures {
-  margin-top: 15px !important;
 }
 
 .loading {

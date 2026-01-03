@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Bus Times - Stop 0190NSC30636</h1>
+    <h1>Bus</h1>
     <div class="departures">
       <div v-if="loading" class="loading">
         Loading bus times...
@@ -70,7 +70,7 @@ export default {
 
 <style>
 .aside, #departures {
-    height: 400px;
+    height: 300px;
     overflow-y: scroll;
 }
 </style>
@@ -92,17 +92,12 @@ export default {
 
 h1 {
   color: #ff6600 !important;
-  border-bottom: 4px solid #ff6600 !important;
-  font-size: 48px !important;
+  font-size: 40px !important;
   text-align: center !important;
   font-family: 'JetBrains Mono', monospace !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
   letter-spacing: 3px !important;
-}
-
-.departures {
-  margin-top: 15px !important;
 }
 
 .loading {
