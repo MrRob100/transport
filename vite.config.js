@@ -17,4 +17,12 @@ export default defineConfig({
             vue: 'vue/dist/vue.esm-bundler.js',
         },
     },
+    build: {
+        target: ['es2015', 'safari11'],
+        rollupOptions: {
+            output: {
+                manualChunks: undefined,
+            }
+        }
+    },
 });
