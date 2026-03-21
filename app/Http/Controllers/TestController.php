@@ -3,14 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Anthropic\Anthropic;
+use Anthropic\Client;
 
 class TestController extends Controller
 {
     public function test()
     {
         try {
-            // Get API key from environment
             $apiKey = env('ANTHROPIC_API_KEY');
 
             if (empty($apiKey)) {
@@ -18,24 +17,19 @@ class TestController extends Controller
                     ->header('Content-Type', 'text/plain');
             }
 
-            // Initialize Anthropic client
-            $client = Anthropic::factory()
-                ->withApiKey($apiKey)
-                ->make();
+            $client = new Client(apiKey: $apiKey);
 
-            // Create a message request
-            $response = $client->messages()->create([
-                'model' => 'claude-sonnet-4-5-20250929',
-                'max_tokens' => 1024,
-                'messages' => [
+            $response = $client->messages->create(
+                maxTokens: 1024,
+                messages: [
                     [
                         'role' => 'user',
                         'content' => 'Give me a random greeting',
                     ],
                 ],
-            ]);
+                model: 'claude-sonnet-4-5-20250929',
+            );
 
-            // Extract the text content from the response
             $greeting = $response->content[0]->text ?? 'No response received';
 
             return response("Claude API Response:\n\n" . $greeting, 200)
